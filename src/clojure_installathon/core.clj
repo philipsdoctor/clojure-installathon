@@ -8,4 +8,5 @@
 
 (defn flip
   "Takes a function, returns a function that flips the order of the inputs"
-  [the-function])
+  [the-function]
+  (fn [first-arg second-arg] (the-function second-arg first-arg)))
